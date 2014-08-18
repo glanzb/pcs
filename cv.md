@@ -8,7 +8,7 @@ I moved to the US in August 2011 and managed to operate my business back in Hung
 **March 2002 – Present:	InforMed 2002 Kft., Managing Director**
 
 * Responsible for everyday operations regarding the maintenance and content management of the [**InforMed Health and Medical portal**](http://informed.hu "InforMed Health and Medical portal").
-* [**InforMed**](http://informed.hu) is a commercial Hungarian language Health & Medicine portal, maintained by advertisements, sponsored micro sites and providing medical content to other professional websites. The portal has 16-20 000 daily users and content updated several times a day.
+* [**InforMed**](http://informed.hu) is a commercial Hungarian language Health & Medicine portal, maintained by advertisements, sponsored micro sites and providing medical content to other professional websites. The portal has 16-20,000 daily users and content updated several times a day.
 
 ##Key Responsibilities and Projects##
 
@@ -34,8 +34,8 @@ I moved to the US in August 2011 and managed to operate my business back in Hung
 
 **October 2008:	Sponsored Micro sites**
 
-* Negotiated with client and after understanding the needs, suggest technical solutions.
-* Drafted and negotiated new contracts and renewals, translated clients needs in technical terms and specification.
+* Negotiated with client and after understanding the needs, suggested technical solutions.
+* Drafted and negotiated new contracts and renewals, translated client's needs in technical terms and specification.
 * Set up meetings, driving tasks and documenting project status and activities.
 * Created reports, statistic information to client.
 
