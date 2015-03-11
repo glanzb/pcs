@@ -16,7 +16,8 @@ AMD is designed for browser environments and CommonJS is targeted at server-side
 
 ##AMD 
 - AMD (Asynchronous Module Definition) format provides a solution for modular JavaScript;
-- both the module and dependencies can be asynchronously loaded. 
+- both the module and dependencies can be asynchronously loaded, **fast**, only loads files that are needed
+- less errors: dependencies must load before the module is executed. 
 - Scope: it avoids the need to worry about globals, supports named modules, doesn't require server transformation to function 
 
 **define method** for module definition and a **require method** for handling dependency loading. 
@@ -24,9 +25,9 @@ AMD is designed for browser environments and CommonJS is targeted at server-side
 define is used to define named or unnamed modules based using the following signature:
 ```
 define(
-    module_id /*optional*/,
-    [dependencies] /*optional*/,
-    definition function /*function for instantiating the module or object*/
+    module_id /*optional*, anonymus modules can be reused without changing names/,
+    [dependencies] /*optional*, array that lists the other parts the module needs to run/,
+    definition function /*function for instantiating the module or object*, factory function/
 );
 ```
 **require** is used to load code in a top-level JavaScript file or within a module should we wish to dynamically fetch dependencies. An example of its usage is:
@@ -44,14 +45,18 @@ require(["foo", "bar"], function ( foo, bar ) {
 
 ##CommonJS - A Module Format Optimized For The Server
 
-CommonJS module is a reusable piece of JavaScript which exports specific objects made available to any dependent code. Unlike AMD, there are typically no function wrappers around such modules (so we won't see define here for example).
+- CommonJS module is a reusable piece of JavaScript which exports specific objects made available to any dependent code.
+- Unlike AMD, there are typically no function wrappers around such modules (so we won't see define here for example).
+- CommonJS modules are only able to define objects, not constructors.
+- CJS fetches module resources synchronously, but the dependencies are stored locally, speed shouldn't be a problem.
+- Was not designed for browsers, needs a package manager to run.
 
 CommonJS modules  contain two primary parts:
 - a free variable named exports which contains the objects a module wishes to make available to other modules 
 - a require function that modules can use to import the exports of other modules.
 ```
 // package/lib is a dependency we require
-var lib = require( "package/lib" );
+var lib = require( "package/lib" ); //The require function imports other modules' exports by their module ids
  
 // behaviour for our module
 function foo(){
