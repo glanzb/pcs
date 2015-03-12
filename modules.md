@@ -4,7 +4,7 @@ In JavaScript, the word "modules" refers to small units of independent, reusable
 Modules help in keeping the units of code for a project both cleanly separated and organized.
 
 ##Ways to create modules:
-- The Module pattern (public/private methods and variables inside a single object, thus shielding particular parts from the global scope)
+- The Module pattern (public/private methods and variables inside a single object)
 -	Object literal notation (object is described as a set of comma-separated name/value pairs enclosed in curly braces)
 -	AMD modules
 -	CommonJS modules
